@@ -12,7 +12,7 @@ namespace Core
         public:
             Shader_Loader(void);
             ~Shader_Loader(void);
-            GLuint CreateProgram(char* VertextShaderFilename, char* FragmentShaderFilename);
+            GLuint CreateProgram(char* vertexShaderFilename, char* fragmentShaderFilename);
 
         private:
             std::string ReadShader(char *filename);
