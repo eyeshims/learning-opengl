@@ -26,6 +26,15 @@ int main(int argc, char **argv)
 
     glEnable(GL_DEPTH_TEST);
 
+    // Check which if OpenGL version 4.5 is supported on this machine.
+    glewInit();
+    if (glewIsSupported("GL_VERSION_4_5")) {
+        std::cout << "GLEW Version is 4.5\n";
+    }
+    else {
+        std::cout << "Glew 4.5 not supported\n";
+    }
+
     // Register a callback that renders the scene.
     // In this case it turns the scene red.
     glutDisplayFunc(renderScene);
