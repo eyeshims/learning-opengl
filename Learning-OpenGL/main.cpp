@@ -26,13 +26,13 @@ int main(int argc, char **argv)
 
     glEnable(GL_DEPTH_TEST);
 
-    // Check which if OpenGL version 4.5 is supported on this machine.
+    // Check which if OpenGL version 3.1 is supported on this machine.
     glewInit();
-    if (glewIsSupported("GL_VERSION_4_5")) {
-        std::cout << "GLEW Version is 4.5\n";
+    if (glewIsSupported("GL_VERSION_3_1")) {
+        std::cout << "GLEW Version is 3.1\n";
     }
     else {
-        std::cout << "Glew 4.5 not supported\n";
+        std::cout << "Glew 3.1 not supported\n";
     }
 
     // Register a callback that renders the scene.
