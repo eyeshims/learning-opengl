@@ -1,7 +1,12 @@
-#version 150 core
+#version 330 core
 
-void main(void)
+layout(location = 0) in vec3 in_position;
+layout(location = 1) in vec4 in_color;
+ 
+out vec4 color;
+ 
+void main()
 {
-	const vec4 triangles[6] = vec4[6](vec4(-0.25, 0.25, 0.5, 1.0), vec4( 0.25, 0.25, 0.5, 1.0), vec4( 0.00, 0.00, 0.5, 1.0));
-	gl_Position = triangles[gl_VertexID];
+	color = in_color;
+	gl_Position = vec4(in_position, 1);
 }
