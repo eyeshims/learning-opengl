@@ -48,9 +48,9 @@ int main(int argc, char **argv)
     glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
 
     // Create window to render in.
-    glutInitWindowPosition(500, 500);
+    glutInitWindowPosition(50, 50);
     glutInitWindowSize(800, 800);
-    glutCreateWindow("OpenGL First Windw");
+    glutCreateWindow("OpenGL 3.1");
     glewInit();
 
     // Check which if OpenGL version 3.1 is supported on this machine.
