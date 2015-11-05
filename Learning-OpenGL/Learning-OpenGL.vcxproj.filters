@@ -27,9 +27,18 @@
     <ClCompile Include="Shader_Loader.cpp">
       <Filter>Source Files\Core</Filter>
     </ClCompile>
+    <ClCompile Include="GameModels.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader_Loader.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexFormat.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameModels.h">
       <Filter>Source Files\Core</Filter>
     </ClInclude>
   </ItemGroup>
@@ -40,5 +49,6 @@
     <None Include="Fragment_Shader.glsl">
       <Filter>Source Files\Shaders</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
